@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../index.css">
 </head>
 <body>
-<div id = "page-wrapper">
+    <div id = "page-wrapper">
         <header>
             <h1> Projects </h1>
         </header>
@@ -24,24 +24,29 @@
             </nav>
 
             <main>
-                <h3> Calculator </h3>
-                <h3 id = "output"> </h3>
-<!--                webstorm suggested to put a label tag-->
-                <p>First Number:
-                    <label for="first_number"> </label>
-                    <input type = "text" id = "first_number">
-                Second Number:
-                    <label for="second_number"> </label>
-                    <input type = "text" id = "second_number">
-                </p>
-                <button onclick="addi()">+</button>
-                <button onclick="subt()">-</button>
-                <button onclick="mult()">*</button>
-                <button onclick="divi()">/</button>
-                <button onclick="expo()">power</button>
-                <button onclick="clears()">Clear</button>
+                <h3> Reactive Calculator </h3>
+                <p> A calculator that will react to your output</p>
+                <div id = "calculator">
+                    <h3 id = "output">Result:  </h3>
+    <!--                webstorm suggested to put a label tag-->
+                    <p class = "input_label">First Number:
+                        <label for="first_number"> </label>
+                        <input type = "text" id = "first_number">
+                    </p>
+                    <p class = "input_label"> Second Number:
+                        <label for="second_number"> </label>
+                        <input type = "text" id = "second_number">
+                    </p>
+                    <button class = "buttons" onclick="addi()">+</button>
+                    <button class = "buttons" onclick="subt()">-</button>
+                    <button class = "buttons" onclick="mult()">*</button>
+                    <button class = "buttons" onclick="divi()">/</button>
+                    <button class = "buttons" onclick="expo()">Power</button>
+                    <button class = "buttons" onclick="clears()">Clear</button>
 
+                    <img id = "judgement" src = "../imgs/neutral.jpeg" alt = "a blue emoji with a neutral smile">
 
+                </div>
             </main>
         </div>
 

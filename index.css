@@ -24,7 +24,7 @@ ul {
     display: flex;
     flex-direction: column;
 }
-main ul  li{
+main ul li{
     padding: 5%;
 }
 main {
@@ -71,8 +71,9 @@ p{
 .desc {
     font-weight: normal;
     font-size: calc(2px + 1vw);
+    margin: 0;
+    padding: 1%;
 }
-
 .negative{
     color: red;
     font-weight: bold;
@@ -80,16 +81,41 @@ p{
 
 img {
     max-width: 30%;
-    /*margin: 10% 0;*/
+    display: inline;
+    /*flex-direction: row;*/
+    margin: 0;
+}
+#judgement{
+    display: flex;
+    margin: auto;
 }
 #withwu{
     max-width: 100%;
 }
 
+.buttons{
+    font-size: calc(2px + 1vw);
+    padding: 2% 2%;
+    margin: 1% 0;
+    border: solid #F075AA 2px;
+    border-radius: 1.5vw;
+}
+#calculator{
+    width: 70%;
+    border: solid #F075AA 4px;
+    border-radius: 1.5vw;
+    background-color: white;
+    margin: 2% auto;
+    padding: 1% 1%;
+}
 @media screen and (max-width: 750px){
+    main *{
+        margin: 10%
+    }
     #content{
         flex-direction: column;
-        height: 100vh;
+        height: 150vh;
+        margin: 0;
     }
 
     nav {
@@ -102,8 +128,8 @@ img {
     }
 
     nav ul {
-        padding-left: 0;
-        list-style-type: none;
+        /*padding-left: 0;*/
+        list-style: none;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -111,20 +137,20 @@ img {
 
     nav li{
         border: solid #AACB73 2px;
-        margin: 0 ;
+        margin: 2% ;
         display: inline;
-        padding: 5%;
+        padding: 2%;
+        text-align: center;
         /*border-right: 2px #AACB73;*/
 
     }
 
     nav a{
-        text-align: center;
+        /*text-align: center;*/
         color: #CDE990;
         text-decoration: none;
         font-size: calc(2px + 1.5vw);
         font-weight: bold;
-
     }
     #withwu{
         margin: auto;
@@ -132,11 +158,23 @@ img {
     header, footer{
         text-align: center;
     }
+    img{
+        margin: 0;
+    }
+    input{
+        display: inline;
+        margin: 0;
+    }
+    label{
+        margin: 0;
+    }
+    .input_label{
+        padding: 0;
+        margin: 1% 0;
+    }
+}
+@media screen and (max-width: 1000px){
     main{
         width: 100%;
     }
-    main *{
-        margin: 10%
-    }
-
 }
