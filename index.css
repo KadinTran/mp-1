@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#page-wrapper {
+    background-color: #CDE990;
+    width: 80%;
+    margin: 0 auto;
+}
+header, footer {
+    background-color: #AACB73;
+}
+#content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 150vh;
+}
+
+ul {
+    padding-left: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+main ul  li{
+    padding: 5%;
+}
+main {
+    width: 70%;
+    background-color: #CDE990;
+    font-size: calc(2px + 1.3vw);
+    text-align: center;
+    padding: 1%
+}
+
+nav {
+    width: 30%;
+    background-color: #CDE990;
+}
+
+nav li{
+    background-color: #F075AA;
+    border: solid #F075AA 2px;
+    text-align: center;
+    margin: 20%
+}
+
+nav a{
+    color: #CDE990;
+    text-decoration: none;
+    font-size: calc(2px + 1.5vw);
+}
+nav p{
+    color: #CDE990;
+    text-decoration: none;
+    font-size: calc(2px + 1vw);
+}
+
+
+h3{
+    padding: 2%
+}
+p{
+    line-height: 150%;
+}
+.list{
+    font-weight: bold;
+}
+.desc {
+    font-weight: normal;
+    font-size: calc(2px + 1vw);
+}
+
+.negative{
+    color: red;
+    font-weight: bold;
+}
+
+img {
+    max-width: 30%;
+    /*margin: 10% 0;*/
+}
+#withwu{
+    max-width: 100%;
+}
+
+@media screen and (max-width: 750px){
+    #content{
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        width: 100%;
+        justify-content: center;
+        /*padding: 5% 0;*/
+    }
+
+    nav ul {
+        padding-left: 0;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav li{
+        border: solid #AACB73 2px;
+        margin: 0 ;
+        display: inline;
+        padding: 5%;
+        /*border-right: 2px #AACB73;*/
+
+    }
+
+    nav a{
+        text-align: center;
+        color: #CDE990;
+        text-decoration: none;
+        font-size: calc(2px + 1.5vw);
+        font-weight: bold;
+
+    }
+    #withwu{
+        margin: auto;
+    }
+    header, footer{
+        text-align: center;
+    }
+    main{
+        width: 100%;
+    }
+    main *{
+        margin: 10%
+    }
+
+}

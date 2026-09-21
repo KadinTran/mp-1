@@ -2,9 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title> Projects | Kadin Resume </title>
+    <link rel="stylesheet" href="../index.css">
 </head>
 <body>
+<div id = "page-wrapper">
+        <header>
+            <h1> Projects </h1>
+        </header>
+        <div id = "content">
 
+            <nav>
+                <ul>
+                    <li> <a href="../index.html">Home</a></li>
+                    <li> <a href="../education/eduation.html"> Education </a> </li>
+                    <li> <a href="../prof_exp/Professional_Experience.html"> Professional Experience </a> </li>
+                    <li> <a href="../vol_exp/Volunteering_Experience.html"> Volunteering Experience </a> </li>
+                    <li> <a href="../skills/skills.html"> Skills </a> </li>
+                    <li> <a href="../projects/projects.html"> Projects </a> </li>
+                </ul>
+            </nav>
+
+            <main>
+                <h3> Calculator </h3>
+                <h3 id = "output"> </h3>
+<!--                webstorm suggested to put a label tag-->
+                <p>First Number:
+                    <label for="first_number"> </label>
+                    <input type = "text" id = "first_number">
+                Second Number:
+                    <label for="second_number"> </label>
+                    <input type = "text" id = "second_number">
+                </p>
+                <button onclick="addi()">+</button>
+                <button onclick="subt()">-</button>
+                <button onclick="mult()">*</button>
+                <button onclick="divi()">/</button>
+                <button onclick="expo()">power</button>
+                <button onclick="clears()">Clear</button>
+
+
+            </main>
+        </div>
+
+        <footer>
+            <p> All Rights Reserved by Kabrandin Tran <a href = ""> Credits </a> &copy; </p>
+        </footer>
+    </div>
+
+    <script src="../index.js"></script>
 </body>
 </html>
