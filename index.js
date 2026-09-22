@@ -3,8 +3,6 @@ function  addi() {
     let f = document.getElementById('first_number').value;
     let s = document.getElementById('second_number').value;
     let out = Number(f) + Number(s);
-    // ternary conditional operator is smtn i rmbd from java
-    // I googled if it works in JS too: https://www.w3schools.com/JS/js_if_ternary.asp
     display(out);
     console.log("add");
 }

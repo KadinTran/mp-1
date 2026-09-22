@@ -1,16 +1,25 @@
 *{
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Krub', sans-serif;
 }
 
 #page-wrapper {
-    background-color: #CDE990;
+    background-color: #76C0EC;
     width: 80%;
     margin: 0 auto;
 }
+
 header, footer {
-    background-color: #AACB73;
+    background-color: #49A4BB;
 }
+header h1{
+    margin: 0 1%;
+}
+header p{
+    margin: 0 1%;
+}
+
 #content{
     width: 100%;
     display: flex;
@@ -19,7 +28,7 @@ header, footer {
 }
 
 ul {
-    padding-left: 0;
+    padding: 0;
     list-style-type: none;
     display: flex;
     flex-direction: column;
@@ -27,37 +36,34 @@ ul {
 main ul li{
     padding: 5%;
 }
+ul.list{
+    margin: 1%;
+}
 main {
     width: 70%;
-    background-color: #CDE990;
-    font-size: calc(2px + 1.3vw);
+    background-color: #76C0EC;
     text-align: center;
     padding: 1%
+}
+main *{
+    font-size: calc(2px + 1.3vw);
 }
 
 nav {
     width: 30%;
-    background-color: #CDE990;
+    background-color: #3368A0;
 }
-
 nav li{
-    background-color: #F075AA;
-    border: solid #F075AA 2px;
+    background-color: #F2EFE7;
+    border: solid #F2EFE7 2px;
     text-align: center;
     margin: 20%
 }
-
 nav a{
-    color: #CDE990;
+    font: bold calc(2px + 1.5vw) 'Krub';
+    color: black;
     text-decoration: none;
-    font-size: calc(2px + 1.5vw);
 }
-nav p{
-    color: #CDE990;
-    text-decoration: none;
-    font-size: calc(2px + 1vw);
-}
-
 
 h3{
     padding: 2%
@@ -65,57 +71,70 @@ h3{
 p{
     line-height: 150%;
 }
+
 .list{
     font-weight: bold;
 }
 .desc {
-    font-weight: normal;
-    font-size: calc(2px + 1vw);
+    font: normal calc(2px + 1vw) 'Krub';
     margin: 0;
     padding: 1%;
-}
-.negative{
-    color: red;
-    font-weight: bold;
 }
 
 img {
     max-width: 30%;
     display: inline;
-    /*flex-direction: row;*/
     margin: 0;
+}
+#withwu{
+    max-width: 90%;
+}
+
+.negative{
+    color: red;
+    font-weight: bold;
 }
 #judgement{
     display: flex;
     margin: auto;
+    max-width: 40%;
 }
-#withwu{
-    max-width: 100%;
-}
-
 .buttons{
     font-size: calc(2px + 1vw);
     padding: 2% 2%;
     margin: 1% 0;
-    border: solid #F075AA 2px;
+    border: solid #76C0EC 2px;
     border-radius: 1.5vw;
 }
 #calculator{
     width: 70%;
-    border: solid #F075AA 4px;
+    border: solid #3368A0 4px;
     border-radius: 1.5vw;
-    background-color: white;
+    background-color: #EAE2D6;
     margin: 2% auto;
     padding: 1% 1%;
 }
+#output{
+    font-size: calc(2px + 2.5vw);
+}
+.input_label{
+    font-size: calc(2px + 1.5vw);
+}
+
 @media screen and (max-width: 750px){
-    main *{
-        margin: 10%
-    }
     #content{
         flex-direction: column;
         height: 150vh;
         margin: 0;
+    }
+    li.list{
+        font-size: calc(2px + 2.5vw);
+    }
+    .desc{
+        font-size: calc(2px + 2.5vw);
+    }
+    main *{
+        font-size: calc(2px + 2.5vw);
     }
 
     nav {
@@ -126,7 +145,6 @@ img {
         justify-content: center;
         /*padding: 5% 0;*/
     }
-
     nav ul {
         /*padding-left: 0;*/
         list-style: none;
@@ -134,33 +152,33 @@ img {
         flex-direction: row;
         justify-content: center;
     }
-
     nav li{
-        border: solid #AACB73 2px;
-        margin: 2% ;
+        border: solid #49A4BB 2px;
+        margin: .5vw ;
         display: inline;
-        padding: 2%;
+        padding: 1.5%;
         text-align: center;
         /*border-right: 2px #AACB73;*/
 
     }
-
     nav a{
         /*text-align: center;*/
-        color: #CDE990;
         text-decoration: none;
         font-size: calc(2px + 1.5vw);
         font-weight: bold;
     }
-    #withwu{
-        margin: auto;
-    }
+
     header, footer{
         text-align: center;
+    }
+
+    #withwu{
+        margin: auto;
     }
     img{
         margin: 0;
     }
+
     input{
         display: inline;
         margin: 0;
@@ -168,9 +186,13 @@ img {
     label{
         margin: 0;
     }
-    .input_label{
+    p.input_label{
         padding: 0;
         margin: 1% 0;
+        font-size: calc(2px + 1.9vw);
+    }
+    .buttons{
+        font-size: calc(2px + 2vw);
     }
 }
 @media screen and (max-width: 1000px){
